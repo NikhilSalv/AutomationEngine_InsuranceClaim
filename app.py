@@ -1,4 +1,4 @@
-# app.py
+
 
 from flask import Flask, request, jsonify
 from app.models import Patient, ProcedureRequest, RuleResult
@@ -7,6 +7,7 @@ from datetime import datetime
 import logging
 from logging.handlers import RotatingFileHandler
 import os
+# from app import app
 
 # Ensure logs directory exists
 if not os.path.exists('logs'):
@@ -55,5 +56,13 @@ def authorize():
     # return "Test"
     return jsonify(decision)
 
+@app.route("/test", methods=["GET"])
+def test():
+    name = request.args.get('name', 'Guest')  # Default to 'Guest' if name not provided
+    return f"Hello {name}"
+
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    # print("Hi")
+    # app.run(debug=True)
+    app.run(debug=True, port=5000)

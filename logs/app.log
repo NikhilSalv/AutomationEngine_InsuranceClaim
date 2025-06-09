@@ -1,20 +1,54 @@
-2025-05-31 10:26:24,603 [WARNING] -  * Debugger is active!
-2025-05-31 10:26:24,612 [INFO] -  * Debugger PIN: 573-427-206
-2025-05-31 10:27:09,015 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/run.py', reloading
-2025-05-31 10:27:09,257 [WARNING] -  * Debugger is active!
-2025-05-31 10:27:09,263 [INFO] -  * Debugger PIN: 573-427-206
-2025-05-31 10:27:30,019 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/run.py', reloading
-2025-05-31 10:27:30,281 [WARNING] -  * Debugger is active!
-2025-05-31 10:27:30,290 [INFO] -  * Debugger PIN: 573-427-206
-2025-05-31 10:27:32,303 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={'MRI123': '2025-02-15T00:00:00'}, diagnosis_codes=['R51', 'G44'])
-2025-05-31 10:27:32,304 [INFO] - 127.0.0.1 - - [31/May/2025 10:27:32] "POST /authorize HTTP/1.1" 200 -
-2025-05-31 10:32:35,030 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/run.py', reloading
-2025-05-31 10:32:35,304 [WARNING] -  * Debugger is active!
-2025-05-31 10:32:35,310 [INFO] -  * Debugger PIN: 573-427-206
-2025-05-31 10:33:10,440 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={'MRI123': datetime.datetime(2025, 2, 15, 0, 0)}, diagnosis_codes=['R51', 'G44'])
-2025-05-31 10:33:10,441 [INFO] - 127.0.0.1 - - [31/May/2025 10:33:10] "POST /authorize HTTP/1.1" 200 -
-2025-05-31 10:33:21,866 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/run.py', reloading
-2025-05-31 10:33:22,113 [WARNING] -  * Debugger is active!
-2025-05-31 10:33:22,120 [INFO] -  * Debugger PIN: 573-427-206
-2025-05-31 10:33:27,048 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={'MRI123': datetime.datetime(2025, 2, 15, 0, 0)}, diagnosis_codes=['R51', 'G44'])
-2025-05-31 10:33:27,048 [INFO] - 127.0.0.1 - - [31/May/2025 10:33:27] "POST /authorize HTTP/1.1" 200 -
+2025-06-09 18:50:56,620 [INFO] - 127.0.0.1 - - [09/Jun/2025 18:50:56] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-09 18:50:57,650 [INFO] - 127.0.0.1 - - [09/Jun/2025 18:50:57] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-09 18:50:57,814 [INFO] - 127.0.0.1 - - [09/Jun/2025 18:50:57] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-09 18:50:57,963 [INFO] - 127.0.0.1 - - [09/Jun/2025 18:50:57] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-09 18:50:58,095 [INFO] - 127.0.0.1 - - [09/Jun/2025 18:50:58] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-09 18:50:58,229 [INFO] - 127.0.0.1 - - [09/Jun/2025 18:50:58] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-09 18:51:32,590 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app.py', reloading
+2025-06-09 18:51:32,784 [WARNING] -  * Debugger is active!
+2025-06-09 18:51:32,789 [INFO] -  * Debugger PIN: 573-427-206
+2025-06-09 18:51:43,851 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-06-09 18:51:43,851 [INFO] - [33mPress CTRL+C to quit[0m
+2025-06-09 18:51:43,851 [INFO] -  * Restarting with stat
+2025-06-09 18:51:43,960 [WARNING] -  * Debugger is active!
+2025-06-09 18:51:43,966 [INFO] -  * Debugger PIN: 573-427-206
+2025-06-09 18:54:33,535 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-06-09 18:54:33,535 [INFO] - [33mPress CTRL+C to quit[0m
+2025-06-09 18:54:33,536 [INFO] -  * Restarting with stat
+2025-06-09 18:54:33,637 [WARNING] -  * Debugger is active!
+2025-06-09 18:54:33,642 [INFO] -  * Debugger PIN: 573-427-206
+2025-06-09 18:57:12,232 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-06-09 18:57:12,232 [INFO] - [33mPress CTRL+C to quit[0m
+2025-06-09 18:57:12,233 [INFO] -  * Restarting with stat
+2025-06-09 18:57:12,344 [WARNING] -  * Debugger is active!
+2025-06-09 18:57:12,350 [INFO] -  * Debugger PIN: 573-427-206
+2025-06-09 18:58:05,578 [INFO] - 127.0.0.1 - - [09/Jun/2025 18:58:05] "[33mGET /authorize/ HTTP/1.1[0m" 404 -
+2025-06-09 18:58:05,679 [INFO] - 127.0.0.1 - - [09/Jun/2025 18:58:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-09 18:58:26,952 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app.py', reloading
+2025-06-09 18:58:26,995 [INFO] -  * Restarting with stat
+2025-06-09 18:58:27,181 [WARNING] -  * Debugger is active!
+2025-06-09 18:58:27,187 [INFO] -  * Debugger PIN: 573-427-206
+2025-06-09 18:58:35,697 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 18:58:35,697 [INFO] - [33mPress CTRL+C to quit[0m
+2025-06-09 18:58:35,698 [INFO] -  * Restarting with stat
+2025-06-09 18:58:35,803 [WARNING] -  * Debugger is active!
+2025-06-09 18:58:35,809 [INFO] -  * Debugger PIN: 573-427-206
+2025-06-09 18:59:14,908 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={'MRI123': datetime.datetime(2025, 2, 15, 0, 0)}, diagnosis_codes=['R51', 'G44'])
+2025-06-09 18:59:14,909 [INFO] - 127.0.0.1 - - [09/Jun/2025 18:59:14] "POST /authorize HTTP/1.1" 200 -
+2025-06-09 19:00:27,721 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app.py', reloading
+2025-06-09 19:00:27,774 [INFO] -  * Restarting with stat
+2025-06-09 19:02:41,738 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 19:02:41,739 [INFO] - [33mPress CTRL+C to quit[0m
+2025-06-09 19:02:41,739 [INFO] -  * Restarting with stat
+2025-06-09 19:02:41,868 [WARNING] -  * Debugger is active!
+2025-06-09 19:02:41,877 [INFO] -  * Debugger PIN: 573-427-206
+2025-06-09 19:03:39,278 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={'MRI123': datetime.datetime(2025, 2, 15, 0, 0)}, diagnosis_codes=['R51', 'G44'])
+2025-06-09 19:03:39,283 [INFO] - 127.0.0.1 - - [09/Jun/2025 19:03:39] "POST /authorize HTTP/1.1" 200 -
+2025-06-09 19:07:05,184 [INFO] - 127.0.0.1 - - [09/Jun/2025 19:07:05] "GET /test?name=John HTTP/1.1" 200 -
+2025-06-09 19:07:20,015 [INFO] - 127.0.0.1 - - [09/Jun/2025 19:07:20] "GET /test?name=John HTTP/1.1" 200 -
+2025-06-09 19:07:51,545 [INFO] - 127.0.0.1 - - [09/Jun/2025 19:07:51] "GET /test?name=Nik HTTP/1.1" 200 -

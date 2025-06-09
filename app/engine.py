@@ -4,6 +4,13 @@ from typing import List
 from datetime import datetime, timedelta
 from .models import Patient, ProcedureRequest, RuleResult
 from .rules import is_procedure_covered, requires_specialist_referral, has_specialist_referral, has_required_prior_procedures
+import logging
+# from logging.handlers import RotatingFileHandler
+# import os
+
+# # Ensure logs directory exists
+# if not os.path.exists('logs'):
+#     os.mkdir('logs')
 
 def make_authorization_decision(patient: Patient, request: ProcedureRequest) -> dict:
     triggered_rules: List[RuleResult] = []

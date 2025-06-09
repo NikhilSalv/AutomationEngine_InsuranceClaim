@@ -4,6 +4,27 @@ import pytest
 from datetime import datetime, timedelta
 from app.models import Patient, ProcedureRequest
 from app.engine import make_authorization_decision
+from app.engine import build_response
+from app.rules import RuleResult
+from app.rules import is_procedure_covered, requires_specialist_referral, has_specialist_referral, has_required_prior_procedures
+
+
+def test_is_procedure_covered():
+    assert is_procedure_covered("INS123", "MRI123") is True
+    assert is_procedure_covered("INS123", "CPT9999") is False
+
+def test_requires_specialist_referral():
+    assert requires_specialist_referral("MRI123") is True
+    assert requires_specialist_referral("XRAY001") is False
+
+def test_has_specialist_referral():
+    assert has_specialist_referral("NEURO01", "MRI123") is True
+    assert has_specialist_referral("GEN01", "MRI123") is False
+
+def test_has_required_prior_procedures():
+    assert has_required_prior_procedures(["CT456"], "MRI123") is True
+    assert has_required_prior_procedures([], "MRI123") is False
+
 
 def mock_patient():
     return Patient(
@@ -76,4 +97,16 @@ def test_referral_required_but_missing(monkeypatch):
     decision = make_authorization_decision(patient, request)
     assert decision["decision"] == "Rejected"
     assert "Specialist referral required" in decision["rules_triggered"][0]["reason"]
+
+def test_build_response():
+    from app.engine import build_response
+    from app.models import RuleResult
+
+    result = RuleResult(status="pass", reason="All good")
+    response = build_response("Approved", [result])
+    
+    assert response["decision"] == "Approved"
+    assert response["rules_triggered"][0]["status"] == "pass"
+    assert "timestamp" in response
+    assert response["rules_triggered"][0]["reason"] == "All good"
 
