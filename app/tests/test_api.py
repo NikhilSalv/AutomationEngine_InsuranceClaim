@@ -1,7 +1,7 @@
 # tests/test_api.py
 
 import json
-from app import app
+# from app import app
 from datetime import datetime, timedelta
 
 def test_authorize_api_approved():
