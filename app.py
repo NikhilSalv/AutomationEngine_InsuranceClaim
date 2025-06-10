@@ -1,6 +1,6 @@
 
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from app.models import Patient, ProcedureRequest, RuleResult
 from app.engine import make_authorization_decision
 from datetime import datetime
@@ -31,11 +31,16 @@ logging.getLogger().setLevel(logging.INFO)
 
 app = Flask(__name__)
 
+@app.route("/", methods=["GET"])
+def form():
+    return render_template("form.html")
+
 @app.route("/authorize", methods=["POST"])
 def authorize():
     data = request.json
 
     patient_data = data['patient']
+    print(patient_data)
     
     # Parse last_procedure_dates from string to datetime
     last_procedure_dates_str = patient_data.get('last_procedure_dates', {})
