@@ -29,6 +29,8 @@ def make_authorization_decision(patient: Patient, request: ProcedureRequest) -> 
     if request.procedure_code in patient.last_procedure_dates:
         last_done = patient.last_procedure_dates[request.procedure_code]
         if not request.urgent and (datetime.now() - last_done < timedelta(days=180)):
+            diff = datetime.now() - last_done
+            print(diff)
             triggered_rules.append(RuleResult(status='fail', reason='Procedure already done in last 6 months.'))
             return build_response('Rejected', triggered_rules)
 
