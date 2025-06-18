@@ -25,3 +25,7 @@
 2025-06-18 21:17:34,913 [INFO] -  * Debugger PIN: 573-427-206
 2025-06-18 21:17:43,157 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={'MRI123': datetime.datetime(2025, 2, 15, 0, 0)}, diagnosis_codes=['R51', 'G44'])
 2025-06-18 21:17:43,158 [INFO] - 127.0.0.1 - - [18/Jun/2025 21:17:43] "POST /authorize HTTP/1.1" 200 -
+2025-06-18 21:19:15,473 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/tests/test_api.py', reloading
+2025-06-18 21:19:15,515 [INFO] -  * Restarting with stat
+2025-06-18 21:19:15,680 [WARNING] -  * Debugger is active!
+2025-06-18 21:19:15,685 [INFO] -  * Debugger PIN: 573-427-206

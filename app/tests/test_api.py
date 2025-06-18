@@ -1,11 +1,11 @@
 # tests/test_api.py
 
 import json
-# from app import app
+from app import app
 from datetime import datetime, timedelta
 
 def test_authorize_api_approved():
-    # client = app.test_client()
+    client = app.test_client()
 
     data = {
         "patient": {
