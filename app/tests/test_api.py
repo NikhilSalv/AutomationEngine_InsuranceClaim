@@ -5,7 +5,7 @@ import json
 from datetime import datetime, timedelta
 
 def test_authorize_api_approved():
-    client = app.test_client()
+    # client = app.test_client()
 
     data = {
         "patient": {
