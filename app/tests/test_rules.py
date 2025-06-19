@@ -1,6 +1,6 @@
 # tests/test_rules.py
 
-from rules import is_procedure_covered, requires_specialist_referral, has_required_prior_procedures
+from app.rules import is_procedure_covered, requires_specialist_referral, has_required_prior_procedures
 
 def test_covered_procedure():
     assert is_procedure_covered("INS001", "MRI123") is True
