@@ -33,6 +33,7 @@ logging.getLogger().setLevel(logging.INFO)
 print("routes.py hit")
 @app.route("/", methods=["GET"])
 def form():
+    print("Fiding template")
     return render_template("form.html")
 
 @app.route("/authorize", methods=["POST"])

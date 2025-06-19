@@ -1,53 +1,16 @@
-2025-06-19 12:12:37,917 [INFO] -  * Restarting with stat
-2025-06-19 12:12:38,098 [WARNING] -  * Debugger is active!
-2025-06-19 12:12:38,098 [WARNING] -  * Debugger is active!
-2025-06-19 12:12:38,103 [INFO] -  * Debugger PIN: 573-427-206
-2025-06-19 12:12:38,103 [INFO] -  * Debugger PIN: 573-427-206
-2025-06-19 12:12:56,858 [INFO] - API hit in routes.py
-2025-06-19 12:12:56,858 [INFO] - API hit in routes.py
-2025-06-19 12:12:56,859 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
-2025-06-19 12:12:56,859 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
-2025-06-19 12:13:16,471 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/tests/test_engine.py', reloading
-2025-06-19 12:13:16,471 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/tests/test_engine.py', reloading
-2025-06-19 12:13:16,507 [INFO] -  * Restarting with stat
-2025-06-19 12:13:16,677 [WARNING] -  * Debugger is active!
-2025-06-19 12:13:16,677 [WARNING] -  * Debugger is active!
-2025-06-19 12:13:16,685 [INFO] -  * Debugger PIN: 573-427-206
-2025-06-19 12:13:16,685 [INFO] -  * Debugger PIN: 573-427-206
-2025-06-19 12:13:21,154 [INFO] - API hit in routes.py
-2025-06-19 12:13:21,154 [INFO] - API hit in routes.py
-2025-06-19 12:13:21,154 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
-2025-06-19 12:13:21,154 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
-2025-06-19 12:14:59,145 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/tests/test_engine.py', reloading
-2025-06-19 12:14:59,145 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/tests/test_engine.py', reloading
-2025-06-19 12:14:59,174 [INFO] -  * Restarting with stat
-2025-06-19 12:14:59,342 [WARNING] -  * Debugger is active!
-2025-06-19 12:14:59,342 [WARNING] -  * Debugger is active!
-2025-06-19 12:14:59,349 [INFO] -  * Debugger PIN: 573-427-206
-2025-06-19 12:14:59,349 [INFO] -  * Debugger PIN: 573-427-206
-2025-06-19 12:15:03,193 [INFO] - API hit in routes.py
-2025-06-19 12:15:03,193 [INFO] - API hit in routes.py
-2025-06-19 12:15:03,194 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
-2025-06-19 12:15:03,194 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
-2025-06-19 12:15:43,921 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/tests/test_engine.py', reloading
-2025-06-19 12:15:43,921 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/tests/test_engine.py', reloading
-2025-06-19 12:15:43,952 [INFO] -  * Restarting with stat
-2025-06-19 12:15:44,128 [WARNING] -  * Debugger is active!
-2025-06-19 12:15:44,128 [WARNING] -  * Debugger is active!
-2025-06-19 12:15:44,136 [INFO] -  * Debugger PIN: 573-427-206
-2025-06-19 12:15:44,136 [INFO] -  * Debugger PIN: 573-427-206
-2025-06-19 12:15:47,546 [INFO] - API hit in routes.py
-2025-06-19 12:15:47,546 [INFO] - API hit in routes.py
-2025-06-19 12:15:47,547 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
-2025-06-19 12:15:47,547 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
-2025-06-19 12:15:58,584 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/tests/test_engine.py', reloading
-2025-06-19 12:15:58,584 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/tests/test_engine.py', reloading
-2025-06-19 12:15:58,620 [INFO] -  * Restarting with stat
-2025-06-19 12:15:58,783 [WARNING] -  * Debugger is active!
-2025-06-19 12:15:58,783 [WARNING] -  * Debugger is active!
-2025-06-19 12:15:58,788 [INFO] -  * Debugger PIN: 573-427-206
-2025-06-19 12:15:58,788 [INFO] -  * Debugger PIN: 573-427-206
-2025-06-19 12:16:02,977 [INFO] - API hit in routes.py
-2025-06-19 12:16:02,977 [INFO] - API hit in routes.py
-2025-06-19 12:16:02,977 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
-2025-06-19 12:16:02,977 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
+2025-06-19 13:45:49,077 [INFO] - 127.0.0.1 - - [19/Jun/2025 13:45:49] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-19 13:45:49,077 [INFO] - 127.0.0.1 - - [19/Jun/2025 13:45:49] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-19 13:46:22,433 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/routes.py', reloading
+2025-06-19 13:46:22,433 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/routes.py', reloading
+2025-06-19 13:46:22,472 [INFO] -  * Restarting with stat
+2025-06-19 13:46:22,472 [INFO] -  * Restarting with stat
+2025-06-19 13:46:22,639 [WARNING] -  * Debugger is active!
+2025-06-19 13:46:22,639 [WARNING] -  * Debugger is active!
+2025-06-19 13:46:22,645 [INFO] -  * Debugger PIN: 573-427-206
+2025-06-19 13:46:22,645 [INFO] -  * Debugger PIN: 573-427-206
+2025-06-19 13:46:30,203 [INFO] - 127.0.0.1 - - [19/Jun/2025 13:46:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-19 13:46:30,203 [INFO] - 127.0.0.1 - - [19/Jun/2025 13:46:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-19 13:50:09,626 [INFO] - 127.0.0.1 - - [19/Jun/2025 13:50:09] "GET / HTTP/1.1" 200 -
+2025-06-19 13:50:09,626 [INFO] - 127.0.0.1 - - [19/Jun/2025 13:50:09] "GET / HTTP/1.1" 200 -
+2025-06-19 13:50:16,268 [INFO] - 127.0.0.1 - - [19/Jun/2025 13:50:16] "GET / HTTP/1.1" 200 -
+2025-06-19 13:50:16,268 [INFO] - 127.0.0.1 - - [19/Jun/2025 13:50:16] "GET / HTTP/1.1" 200 -
