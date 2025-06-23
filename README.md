@@ -2,6 +2,9 @@
 
 > Backend microservice to automate insurance prior authorization decisions for diagnostic procedures such as MRI, CT scans, etc.
 
+<img width="872" alt="Screenshot 2025-06-23 at 15 16 43" src="https://github.com/user-attachments/assets/6a71dc03-081d-4960-b462-4a8b1f0767d5" />
+
+
 
 Link : https://automationengineensuranceelaim-8437e9c4d0ee.herokuapp.com/ 
 
