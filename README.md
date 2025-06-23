@@ -162,11 +162,73 @@ The system expects a JSON payload with the following structure:
 | `physician_id`     | ID of doctor making the request                  | May determine if specialist referral is needed                      |
 | `clinical_summary` | Free-text from doctor explaining condition       | Provides context for manual or AI-based decision support            |
 
-## PyTest
+## PyTest
+
+## ✅ Testing & Code Coverage
+
+This project follows a robust testing approach using **`pytest`** to ensure correctness and confidence across all critical logic components such as the authorization engine, business rules, and API endpoints.
+
+### 🧪 Test Structure
+
+Tests are organized under the `app/tests/` directory and cover:
+
+| **Test File**                | **Description**                                                                 |
+|-----------------------------|---------------------------------------------------------------------------------|
+| `test_api.py`               | End-to-end test for the `/authorize` API route using Flask test client          |
+| `test_engine.py`            | Unit tests for the core authorization engine (`engine.py`) and rule flow logic |
+| `test_rules.py`             | Tests for individual rule utility functions in `rules.py`                      |
+| `__init__.py`               | Marks directories as test modules                                               |
 
 
+## ✅ Testing & Code Coverage
 
-### Deployment and CI/CD.
+This project follows a robust testing approach using **`pytest`** to ensure correctness and confidence across all critical logic components such as the authorization engine, business rules, and API endpoints.
+
+### 🧪 Test Structure
+
+Tests are organized under the `app/tests/` directory and cover:
+
+| **Test File**                | **Description**                                                                 |
+|-----------------------------|---------------------------------------------------------------------------------|
+| `test_api.py`               | End-to-end test for the `/authorize` API route using Flask test client          |
+| `test_engine.py`            | Unit tests for the core authorization engine (`engine.py`) and rule flow logic |
+| `test_rules.py`             | Tests for individual rule utility functions in `rules.py`                      |
+| `__init__.py`               | Marks directories as test modules                                               |
+
+### 🛠️ Test Coverage
+
+### 📊 Test Coverage Report
+
+| **File**                    | **Statements** | **Missed** | **Coverage** |
+|----------------------------|----------------|------------|--------------|
+| `app.py`                   | 0              | 0          | 100%         |
+| `app/__init__.py`          | 14             | 1          | 93%          |
+| `app/engine.py`            | 31             | 4          | 87%          |
+| `app/models.py`            | 23             | 0          | 100%         |
+| `app/routes.py`            | 44             | 6          | 86%          |
+| `app/rules.py`             | 11             | 0          | 100%         |
+| `app/tests/__init_.py`     | 0              | 0          | 100%         |
+| `app/tests/__init__.py`    | 0              | 0          | 100%         |
+| `app/tests/test_api.py`    | 14             | 0          | 100%         |
+| `app/tests/test_engine.py` | 76             | 0          | 100%         |
+| `app/tests/test_rules.py`  | 10             | 0          | 100%         |
+| `run.py`                   | 4              | 4          | 0%           |
+| **Total**                  | **227**        | **15**     | **93%**      |
+
+
+This report shows that **93%** of the total codebase is covered by tests. All critical components like the **authorization engine**, **rule logic**, and **API routes** have strong coverage. The only uncovered lines are in `run.py`, which serves as the entry-point script and typically has minimal logic.
+
+> ✅ Most modules have 100% test coverage, ensuring high reliability and confidence in rule-based decisions.
+
+
+You can run all tests using:
+
+```bash
+pytest
+```
+
+
+## Deployment and CI/CD.
 
 This project uses **GitHub Actions** to automate testing, linting, and deployment to a **Heroku staging environment**.
 
