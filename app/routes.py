@@ -48,6 +48,7 @@ def authorize():
     
     # Parse last_procedure_dates from string to datetime
     last_procedure_dates_str = patient_data.get('last_procedure_dates', {})
+    print("Last pricedures ______:", last_procedure_dates_str)
     last_procedure_dates_dt = {
         k: datetime.fromisoformat(v) for k, v in last_procedure_dates_str.items()
     }

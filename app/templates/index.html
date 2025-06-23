@@ -14,18 +14,27 @@
                 <label>Patient ID:</label>
                 <input type="text" name="patient_id" required>
 
-                <label>Insurance Provider ID:</label>
+                <label>Insurance Provider ID: (e.g. INS456)</label>
                 <input type="text" name="insurance_provider_id" required>
 
                 <label><input type="checkbox" name="eligible"> Eligible</label>
 
-                <label>Previous Procedures (comma-separated):</label>
+                <label>Previous Procedures (comma-separated) (e.g. XRAY001, CT456):</label>
                 <input type="text" name="previous_procedures">
-
+<!-- 
                 <label>Last Procedure Dates (e.g. {"MRI123":"2025-02-15T00:00:00"}):</label>
-                <input type="text" name="last_procedure_dates">
+                <input type="text" name="last_procedure_dates"> -->
 
-                <label>Diagnosis Codes (comma-separated):</label>
+                <label>Last Procedure Dates:</label>
+                <div id="procedureDates">
+                    <div class="date-entry">
+                        <input type="text" placeholder="Procedure Code (e.g. MRI123)" class="procedure-code">
+                        <input type="datetime-local" class="procedure-date">
+                    </div>
+                </div>
+                <button type="button" id="addDateBtn">➕ Add Another</button>
+
+                <label>Diagnosis Codes (comma-separated): (e.g. R51, G44)</label>
                 <input type="text" name="diagnosis_codes">
             </section>
 
@@ -39,7 +48,7 @@
 
                 <label><input type="checkbox" name="urgent"> Urgent</label>
 
-                <label>Physician ID:</label>
+                <label>Physician ID: (e.g. NEURO987) </label>
                 <input type="text" name="physician_id">
 
                 <label>Clinical Summary:</label>
@@ -53,51 +62,73 @@
     </div>
 
     <script>
-        document.getElementById("authForm").addEventListener("submit", async function(e) {
-            e.preventDefault();
+document.getElementById("authForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
 
-            const formData = new FormData(e.target);
-            const patient = {
-                patient_id: formData.get("patient_id"),
-                insurance_provider_id: formData.get("insurance_provider_id"),
-                eligible: formData.get("eligible") === "on",
-                previous_procedures: formData.get("previous_procedures").split(",").map(p => p.trim()),
-                last_procedure_dates: eval("(" + formData.get("last_procedure_dates") + ")"),
-                diagnosis_codes: formData.get("diagnosis_codes").split(",").map(c => c.trim())
-            };
+    const formData = new FormData(e.target);
 
-            const procedure = {
-                procedure_code: formData.get("procedure_code"),
-                diagnosis_code: formData.get("diagnosis_code"),
-                urgent: formData.get("urgent") === "on",
-                physician_id: formData.get("physician_id"),
-                clinical_summary: formData.get("clinical_summary")
-            };
+    // ✅ Dynamically collect last_procedure_dates
+    const procedureDateEntries = document.querySelectorAll(".date-entry");
+    const lastProcedureDates = {};
+    procedureDateEntries.forEach(entry => {
+        const code = entry.querySelector(".procedure-code").value.trim();
+        const date = entry.querySelector(".procedure-date").value;
+        if (code && date) {
+            lastProcedureDates[code] = date;
+        }
+    });
 
-            const response = await fetch("/authorize", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ patient, procedure })
-            });
+    // ✅ Construct patient object
+    const patient = {
+        patient_id: formData.get("patient_id"),
+        insurance_provider_id: formData.get("insurance_provider_id"),
+        eligible: formData.get("eligible") === "on",
+        previous_procedures: formData.get("previous_procedures").split(",").map(p => p.trim()),
+        diagnosis_codes: formData.get("diagnosis_codes").split(",").map(c => c.trim()),
+        last_procedure_dates: lastProcedureDates
+    };
 
-            const result = await response.json();
-            const resultBox = document.getElementById("result");
-            resultBox.style.display = "block";
+    // ✅ Construct procedure object
+    const procedure = {
+        procedure_code: formData.get("procedure_code"),
+        diagnosis_code: formData.get("diagnosis_code"),
+        urgent: formData.get("urgent") === "on",
+        physician_id: formData.get("physician_id"),
+        clinical_summary: formData.get("clinical_summary")
+    };
 
-            resultBox.innerHTML = `
-                <h3 class="decision">Decision: <span class="${result.decision === 'Approved' ? 'pass' : result.decision === 'Rejected' ? 'fail' : 'pending'}">${result.decision}</span></h3>
-                <p><strong>Timestamp:</strong> ${result.timestamp}</p>
-                <h4>Rules Triggered:</h4>
-                <ul>
-                    ${result.rules_triggered.map(rule => `
-                        <li>
-                            <strong>Status:</strong> <span class="${rule.status}">${rule.status}</span><br>
-                            <strong>Reason:</strong> ${rule.reason}
-                        </li>
-                    `).join("")}
-                </ul>
-            `;
-        });
+    // ✅ Debug payload (optional)
+    // console.log(JSON.stringify({ patient, procedure }, null, 2));
+
+    // ✅ Send API request
+    const response = await fetch("/authorize", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ patient, procedure })
+    });
+
+    const result = await response.json();
+    const resultBox = document.getElementById("result");
+    resultBox.style.display = "block";
+
+    // ✅ Display result
+    resultBox.innerHTML = `
+        <h3 class="decision">Decision: <span class="${
+            result.decision === 'Approved' ? 'pass' :
+            result.decision === 'Rejected' ? 'fail' : 'pending'
+        }">${result.decision}</span></h3>
+        <p><strong>Timestamp:</strong> ${result.timestamp}</p>
+        <h4>Rules Triggered:</h4>
+        <ul>
+            ${result.rules_triggered.map(rule => `
+                <li>
+                    <strong>Status:</strong> <span class="${rule.status}">${rule.status}</span><br>
+                    <strong>Reason:</strong> ${rule.reason}
+                </li>
+            `).join("")}
+        </ul>
+    `;
+});
     </script>
 </body>
 </html>
