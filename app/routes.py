@@ -34,7 +34,7 @@ print("routes.py hit")
 @app.route("/", methods=["GET"])
 def form():
     print("Fiding template")
-    return render_template("form.html")
+    return render_template("index.html")
 
 @app.route("/authorize", methods=["POST"])
 def authorize():

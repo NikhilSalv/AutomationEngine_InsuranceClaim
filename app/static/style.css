@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f4f8;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #2e5aac;
+    margin-bottom: 30px;
+}
+
+.form-card {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9fbfc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #2e5aac;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #244a92;
+}
+
+.result-box {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #eef3ff;
+    border-left: 6px solid #2e5aac;
+    border-radius: 6px;
+}
+
+.decision {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pass {
+    color: green;
+}
+
+.fail {
+    color: red;
+}
+
+.pending {
+    color: orange;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
