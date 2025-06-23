@@ -14,3 +14,33 @@
 2025-06-19 13:50:09,626 [INFO] - 127.0.0.1 - - [19/Jun/2025 13:50:09] "GET / HTTP/1.1" 200 -
 2025-06-19 13:50:16,268 [INFO] - 127.0.0.1 - - [19/Jun/2025 13:50:16] "GET / HTTP/1.1" 200 -
 2025-06-19 13:50:16,268 [INFO] - 127.0.0.1 - - [19/Jun/2025 13:50:16] "GET / HTTP/1.1" 200 -
+2025-06-23 08:33:47,957 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-23 08:33:47,957 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-23 08:33:47,957 [INFO] - [33mPress CTRL+C to quit[0m
+2025-06-23 08:33:47,957 [INFO] - [33mPress CTRL+C to quit[0m
+2025-06-23 08:33:47,958 [INFO] -  * Restarting with stat
+2025-06-23 08:33:47,958 [INFO] -  * Restarting with stat
+2025-06-23 08:33:48,071 [WARNING] -  * Debugger is active!
+2025-06-23 08:33:48,071 [WARNING] -  * Debugger is active!
+2025-06-23 08:33:48,077 [INFO] -  * Debugger PIN: 573-427-206
+2025-06-23 08:33:48,077 [INFO] -  * Debugger PIN: 573-427-206
+2025-06-23 08:34:11,197 [INFO] - 127.0.0.1 - - [23/Jun/2025 08:34:11] "GET / HTTP/1.1" 200 -
+2025-06-23 08:34:11,197 [INFO] - 127.0.0.1 - - [23/Jun/2025 08:34:11] "GET / HTTP/1.1" 200 -
+2025-06-23 08:34:12,600 [INFO] - 127.0.0.1 - - [23/Jun/2025 08:34:12] "GET / HTTP/1.1" 200 -
+2025-06-23 08:34:12,600 [INFO] - 127.0.0.1 - - [23/Jun/2025 08:34:12] "GET / HTTP/1.1" 200 -
+2025-06-23 08:34:12,729 [INFO] - 127.0.0.1 - - [23/Jun/2025 08:34:12] "GET / HTTP/1.1" 200 -
+2025-06-23 08:34:12,729 [INFO] - 127.0.0.1 - - [23/Jun/2025 08:34:12] "GET / HTTP/1.1" 200 -
+2025-06-23 08:34:12,861 [INFO] - 127.0.0.1 - - [23/Jun/2025 08:34:12] "GET / HTTP/1.1" 200 -
+2025-06-23 08:34:12,861 [INFO] - 127.0.0.1 - - [23/Jun/2025 08:34:12] "GET / HTTP/1.1" 200 -
+2025-06-23 08:34:19,171 [INFO] - 127.0.0.1 - - [23/Jun/2025 08:34:19] "GET /test?name=John HTTP/1.1" 200 -
+2025-06-23 08:34:19,171 [INFO] - 127.0.0.1 - - [23/Jun/2025 08:34:19] "GET /test?name=John HTTP/1.1" 200 -
+2025-06-23 08:34:22,237 [INFO] - 127.0.0.1 - - [23/Jun/2025 08:34:22] "GET /test?name=John HTTP/1.1" 200 -
+2025-06-23 08:34:22,237 [INFO] - 127.0.0.1 - - [23/Jun/2025 08:34:22] "GET /test?name=John HTTP/1.1" 200 -
+2025-06-23 08:36:43,900 [INFO] - API hit in routes.py
+2025-06-23 08:36:43,900 [INFO] - API hit in routes.py
+2025-06-23 08:36:43,902 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['R51', 'G44'])
+2025-06-23 08:36:43,902 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['R51', 'G44'])
+2025-06-23 08:36:43,904 [INFO] - 127.0.0.1 - - [23/Jun/2025 08:36:43] "POST /authorize HTTP/1.1" 200 -
+2025-06-23 08:36:43,904 [INFO] - 127.0.0.1 - - [23/Jun/2025 08:36:43] "POST /authorize HTTP/1.1" 200 -
