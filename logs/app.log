@@ -52,3 +52,11 @@
 2025-06-23 14:43:06,458 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={}, diagnosis_codes=['R51', 'G44'])
 2025-06-23 14:43:06,458 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:43:06] "POST /authorize HTTP/1.1" 200 -
 2025-06-23 14:43:06,458 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:43:06] "POST /authorize HTTP/1.1" 200 -
+2025-06-24 11:57:58,638 [INFO] - API hit in routes.py
+2025-06-24 11:57:58,638 [INFO] - API hit in routes.py
+2025-06-24 11:57:58,639 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
+2025-06-24 11:57:58,639 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
+2025-06-24 11:58:22,328 [INFO] - API hit in routes.py
+2025-06-24 11:58:22,328 [INFO] - API hit in routes.py
+2025-06-24 11:58:22,328 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
+2025-06-24 11:58:22,328 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])

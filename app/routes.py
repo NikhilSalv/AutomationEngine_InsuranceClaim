@@ -33,6 +33,7 @@ logging.getLogger().setLevel(logging.INFO)
 print("routes.py hit")
 @app.route("/", methods=["GET"])
 def form():
+    logging.info(f"Home page visited at {datetime.now().isoformat()}")
     print("Fiding template")
     return render_template("index.html")
 
