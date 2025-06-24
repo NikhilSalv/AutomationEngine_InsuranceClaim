@@ -9,24 +9,35 @@ import os
 import pdb
 from app import app
 
+import sys
+
+formatter = logging.Formatter('%(asctime)s [%(levelname)s] - %(message)s')
+handler = logging.StreamHandler(sys.stdout)
+handler.setFormatter(formatter)
+handler.setLevel(logging.INFO)
+
+logger = logging.getLogger()
+logger.addHandler(handler)
+logger.setLevel(logging.INFO)
+
 # Ensure logs directory exists
-if not os.path.exists('logs'):
-    os.mkdir('logs')
+# if not os.path.exists('logs'):
+#     os.mkdir('logs')
 
-# Configure logging
-log_file = 'logs/app.log'
-file_handler = RotatingFileHandler(log_file, maxBytes=10240, backupCount=5)
-file_handler.setLevel(logging.INFO)
+# # Configure logging
+# log_file = 'logs/app.log'
+# file_handler = RotatingFileHandler(log_file, maxBytes=10240, backupCount=5)
+# file_handler.setLevel(logging.INFO)
 
-# Format logs
-formatter = logging.Formatter(
-    '%(asctime)s [%(levelname)s] - %(message)s'
-)
-file_handler.setFormatter(formatter)
+# # Format logs
+# formatter = logging.Formatter(
+#     '%(asctime)s [%(levelname)s] - %(message)s'
+# )
+# file_handler.setFormatter(formatter)
 
-# Add handler to root logger
-logging.getLogger().addHandler(file_handler)
-logging.getLogger().setLevel(logging.INFO)
+# # Add handler to root logger
+# logging.getLogger().addHandler(file_handler)
+# logging.getLogger().setLevel(logging.INFO)
 
 
 # app = Flask(__name__)

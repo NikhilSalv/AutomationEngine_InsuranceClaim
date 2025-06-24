@@ -1,62 +1,24 @@
-2025-06-23 14:21:12,946 [INFO] -  * Restarting with stat
-2025-06-23 14:21:13,126 [WARNING] -  * Debugger is active!
-2025-06-23 14:21:13,126 [WARNING] -  * Debugger is active!
-2025-06-23 14:21:13,135 [INFO] -  * Debugger PIN: 573-427-206
-2025-06-23 14:21:13,135 [INFO] -  * Debugger PIN: 573-427-206
-2025-06-23 14:21:14,181 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/routes.py', reloading
-2025-06-23 14:21:14,181 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/routes.py', reloading
-2025-06-23 14:21:14,202 [INFO] -  * Restarting with stat
-2025-06-23 14:21:14,327 [WARNING] -  * Debugger is active!
-2025-06-23 14:21:14,327 [WARNING] -  * Debugger is active!
-2025-06-23 14:21:14,331 [INFO] -  * Debugger PIN: 573-427-206
-2025-06-23 14:21:14,331 [INFO] -  * Debugger PIN: 573-427-206
-2025-06-23 14:21:16,038 [INFO] - API hit in routes.py
-2025-06-23 14:21:16,038 [INFO] - API hit in routes.py
-2025-06-23 14:21:16,065 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:21:16] "[35m[1mPOST /authorize HTTP/1.1[0m" 500 -
-2025-06-23 14:21:16,065 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:21:16] "[35m[1mPOST /authorize HTTP/1.1[0m" 500 -
-2025-06-23 14:38:03,864 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:38:03] "GET / HTTP/1.1" 200 -
-2025-06-23 14:38:03,864 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:38:03] "GET / HTTP/1.1" 200 -
-2025-06-23 14:38:03,916 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:38:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-2025-06-23 14:38:03,916 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:38:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-2025-06-23 14:38:25,382 [INFO] - API hit in routes.py
-2025-06-23 14:38:25,382 [INFO] - API hit in routes.py
-2025-06-23 14:38:25,383 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={}, diagnosis_codes=['R51', 'G44'])
-2025-06-23 14:38:25,383 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={}, diagnosis_codes=['R51', 'G44'])
-2025-06-23 14:38:25,384 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:38:25] "POST /authorize HTTP/1.1" 200 -
-2025-06-23 14:38:25,384 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:38:25] "POST /authorize HTTP/1.1" 200 -
-2025-06-23 14:39:12,212 [INFO] - API hit in routes.py
-2025-06-23 14:39:12,212 [INFO] - API hit in routes.py
-2025-06-23 14:39:12,214 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={}, diagnosis_codes=['R51', 'G44'])
-2025-06-23 14:39:12,214 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={}, diagnosis_codes=['R51', 'G44'])
-2025-06-23 14:39:12,214 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:39:12] "POST /authorize HTTP/1.1" 200 -
-2025-06-23 14:39:12,214 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:39:12] "POST /authorize HTTP/1.1" 200 -
-2025-06-23 14:39:19,178 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:39:19] "GET / HTTP/1.1" 200 -
-2025-06-23 14:39:19,178 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:39:19] "GET / HTTP/1.1" 200 -
-2025-06-23 14:39:19,209 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:39:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-2025-06-23 14:39:19,209 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:39:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-2025-06-23 14:39:40,506 [INFO] - API hit in routes.py
-2025-06-23 14:39:40,506 [INFO] - API hit in routes.py
-2025-06-23 14:39:40,507 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={}, diagnosis_codes=['R51', 'G44'])
-2025-06-23 14:39:40,507 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={}, diagnosis_codes=['R51', 'G44'])
-2025-06-23 14:39:40,508 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:39:40] "POST /authorize HTTP/1.1" 200 -
-2025-06-23 14:39:40,508 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:39:40] "POST /authorize HTTP/1.1" 200 -
-2025-06-23 14:43:04,295 [INFO] - API hit in routes.py
-2025-06-23 14:43:04,295 [INFO] - API hit in routes.py
-2025-06-23 14:43:04,298 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={}, diagnosis_codes=['R51', 'G44'])
-2025-06-23 14:43:04,298 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={}, diagnosis_codes=['R51', 'G44'])
-2025-06-23 14:43:04,298 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:43:04] "POST /authorize HTTP/1.1" 200 -
-2025-06-23 14:43:04,298 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:43:04] "POST /authorize HTTP/1.1" 200 -
-2025-06-23 14:43:06,458 [INFO] - API hit in routes.py
-2025-06-23 14:43:06,458 [INFO] - API hit in routes.py
-2025-06-23 14:43:06,458 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={}, diagnosis_codes=['R51', 'G44'])
-2025-06-23 14:43:06,458 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={}, diagnosis_codes=['R51', 'G44'])
-2025-06-23 14:43:06,458 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:43:06] "POST /authorize HTTP/1.1" 200 -
-2025-06-23 14:43:06,458 [INFO] - 127.0.0.1 - - [23/Jun/2025 14:43:06] "POST /authorize HTTP/1.1" 200 -
-2025-06-24 11:57:58,638 [INFO] - API hit in routes.py
-2025-06-24 11:57:58,638 [INFO] - API hit in routes.py
-2025-06-24 11:57:58,639 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
-2025-06-24 11:57:58,639 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
-2025-06-24 11:58:22,328 [INFO] - API hit in routes.py
-2025-06-24 11:58:22,328 [INFO] - API hit in routes.py
-2025-06-24 11:58:22,328 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
-2025-06-24 11:58:22,328 [INFO] - patient data : Patient(patient_id='P001', insurance_provider_id='INS123', eligible=True, previous_procedures=['CT456'], last_procedure_dates={'MRI123': datetime.datetime(2024, 2, 15, 0, 0)}, diagnosis_codes=['DIA001'])
+2025-06-24 22:39:39,046 [INFO] - Home page visited at 2025-06-24T22:39:39.046429
+2025-06-24 22:39:39,046 [INFO] - Home page visited at 2025-06-24T22:39:39.046429
+2025-06-24 22:39:39,048 [INFO] - 127.0.0.1 - - [24/Jun/2025 22:39:39] "GET / HTTP/1.1" 200 -
+2025-06-24 22:39:39,048 [INFO] - 127.0.0.1 - - [24/Jun/2025 22:39:39] "GET / HTTP/1.1" 200 -
+2025-06-24 22:39:39,083 [INFO] - 127.0.0.1 - - [24/Jun/2025 22:39:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-24 22:39:39,083 [INFO] - 127.0.0.1 - - [24/Jun/2025 22:39:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-24 22:41:47,482 [INFO] - API hit in routes.py
+2025-06-24 22:41:47,482 [INFO] - API hit in routes.py
+2025-06-24 22:41:47,483 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={}, diagnosis_codes=['R51', 'G44'])
+2025-06-24 22:41:47,483 [INFO] - patient data : Patient(patient_id='P12345', insurance_provider_id='INS456', eligible=True, previous_procedures=['XRAY001', 'CT456'], last_procedure_dates={}, diagnosis_codes=['R51', 'G44'])
+2025-06-24 22:41:47,484 [INFO] - 127.0.0.1 - - [24/Jun/2025 22:41:47] "POST /authorize HTTP/1.1" 200 -
+2025-06-24 22:41:47,484 [INFO] - 127.0.0.1 - - [24/Jun/2025 22:41:47] "POST /authorize HTTP/1.1" 200 -
+2025-06-24 22:52:41,926 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/routes.py', reloading
+2025-06-24 22:52:41,926 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/routes.py', reloading
+2025-06-24 22:52:42,011 [INFO] -  * Restarting with stat
+2025-06-24 22:52:42,011 [INFO] -  * Restarting with stat
+2025-06-24 22:52:42,227 [WARNING] -  * Debugger is active!
+2025-06-24 22:52:42,227 [WARNING] -  * Debugger is active!
+2025-06-24 22:52:42,283 [INFO] -  * Debugger PIN: 573-427-206
+2025-06-24 22:52:42,283 [INFO] -  * Debugger PIN: 573-427-206
+2025-06-24 22:52:50,567 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/routes.py', reloading
+2025-06-24 22:52:50,567 [INFO] -  * Detected change in '/Users/vloggerbhaai/Desktop/DataScience/AutomationEngine/AutomationEngine_InsuranceClaim/app/routes.py', reloading
+2025-06-24 22:52:50,602 [INFO] -  * Restarting with stat
+2025-06-24 22:52:50,602 [INFO] -  * Restarting with stat
